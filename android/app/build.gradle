@@ -122,6 +122,9 @@ android {
         versionName "1.0"
     }
 
+    lint {
+        baseline = file("lint-baseline.xml")
+    }
     splits {
         abi {
             reset()
