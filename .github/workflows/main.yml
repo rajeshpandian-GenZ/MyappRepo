@@ -22,7 +22,8 @@ jobs:
         uses: docker/build-push-action@v4
         with:
           context: .
-          push: true
+          #push: true
+          load: true
           tags: nirulabs/${{github.run_number}}
       - name: Log in with Azure
         uses: azure/login@v1
